@@ -679,23 +679,77 @@ ul { list-style: none; }
     object-fit: cover;
 }
 
-/* Variante mockup: screenshot flotando sobre fondo oscuro */
+/* Variante mockup: browser frame sobre fondo oscuro */
 .project-hero__cover--mockup {
-    background: linear-gradient(170deg, #1C1C1C 0%, #111111 100%);
+    background: #111111;
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    padding: 48px 8% 0;
+    padding: 56px 8% 0;
     overflow: hidden;
 }
 
 .project-hero__cover--mockup img {
+    display: none; /* la imagen va dentro del mockup-browser */
+}
+
+/* Browser mockup */
+.mockup-browser {
     width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: bottom center;
     border-radius: 12px 12px 0 0;
-    box-shadow: 0 -8px 60px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.06);
+    overflow: hidden;
+    box-shadow: 0 24px 80px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.08);
+    flex-shrink: 0;
+}
+
+.mockup-browser__bar {
+    background: #2A2A2A;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.mockup-browser__dots {
+    display: flex;
+    gap: 6px;
+    flex-shrink: 0;
+}
+
+.mockup-browser__dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.mockup-browser__dot:nth-child(1) { background: #FF5F57; }
+.mockup-browser__dot:nth-child(2) { background: #FFBD2E; }
+.mockup-browser__dot:nth-child(3) { background: #28C840; }
+
+.mockup-browser__url {
+    flex: 1;
+    height: 22px;
+    background: #1A1A1A;
+    border-radius: 6px;
+    margin: 0 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mockup-browser__url span {
+    font-family: var(--font);
+    font-size: 11px;
+    color: rgba(255,255,255,0.3);
+    letter-spacing: 0.02em;
+}
+
+.mockup-browser__screen img {
+    width: 100%;
+    display: block;
+    border-top: 1px solid rgba(255,255,255,0.06);
 }
 
 /* Placeholder de portada del proyecto */
