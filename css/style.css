@@ -851,6 +851,16 @@ ul { list-style: none; }
     padding-left: 4px;
 }
 
+/* Imágenes dentro de grid: mismo tamaño forzado */
+.content-grid .content-figure img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    object-position: top;
+    border-radius: var(--radius-md);
+    display: block;
+}
+
 /* Bloque de texto */
 .content-text {
     max-width: 680px;
