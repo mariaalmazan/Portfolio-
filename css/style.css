@@ -1282,6 +1282,24 @@ ul { list-style: none; }
     max-width: 720px;
 }
 
+.content-callout__cta {
+    display: inline-block;
+    margin-top: var(--gap-sm);
+    padding: 12px 28px;
+    background: var(--accent);
+    color: var(--text);
+    font-size: var(--size-sm);
+    font-weight: 600;
+    border-radius: 100px;
+    transition: background var(--t-fast) var(--ease),
+                transform var(--t-fast) var(--ease);
+}
+
+.content-callout__cta:hover {
+    background: var(--accent-dark);
+    transform: translateY(-2px);
+}
+
 /* Placeholder de vídeo */
 .content-video {
     width: 100%;
