@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria Almazan — Diseñadora UX/UI & AI Design</title>
+    <meta name="description" content="Diseñadora UX/UI especializada en AI Design. Creo experiencias digitales intuitivas y significativas.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Custom cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <header class="nav" id="nav">
+        <a href="index.html" class="nav__logo">NA</a>
+        <nav class="nav__menu" aria-label="Navegación principal">
+            <a href="#proyectos" class="nav__link">Proyectos</a>
+            <a href="#sobre-mi" class="nav__link">Sobre mí</a>
+            <a href="mailto:tu@email.com" class="nav__link nav__link--cta">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ─── Hero ─────────────────────────────────────────────────── -->
+        <section class="hero">
+            <div class="hero__inner">
+                <div class="hero__top">
+                    <div class="hero__headline" data-reveal>
+                        <h1 class="hero__name">
+                            <span class="hero__name-line">Maria</span>
+                            <span class="hero__name-line hero__name-line--accent">Almazan</span>
+                        </h1>
+                    </div>
+                    <div class="hero__side" data-reveal data-reveal-delay="1">
+                        <p class="hero__discipline">
+                            Diseñadora UX/UI<br>
+                            <em>& AI Design</em>
+                        </p>
+                        <p class="hero__description">
+                            Creo experiencias digitales que conectan
+                            personas con la tecnología de forma
+                            intuitiva, clara y significativa.
+                        </p>
+                    </div>
+                </div>
+                <div class="hero__bottom" data-reveal data-reveal-delay="2">
+                  
+                    <a href="#proyectos" class="hero__scroll">
+                        Ver proyectos
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                            <path d="M8 3v10M3 9l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ─── Proyectos ─────────────────────────────────────────────── -->
+        <section class="projects" id="proyectos">
+            <div class="section-header" data-reveal>
+                <span class="label">Proyectos seleccionados</span>
+                <div class="section-line" aria-hidden="true"></div>
+            </div>
+
+            <div class="projects__grid">
+
+                <!-- Proyecto 01 -->
+                <article class="project-card" data-reveal>
+                    <a href="projects/project-01.html" class="project-card__link" aria-label="Ver proyecto: Nueva Revista">
+                        <div class="project-card__cover">
+                            <!-- <img src="assets/images/project-01-cover.jpg" alt="Nueva Revista"> -->
+                            <div class="project-card__placeholder" style="--ph-hue: 200"></div>
+                            <div class="project-card__overlay" aria-hidden="true">
+                                <span class="project-card__view">Ver proyecto →</span>
+                            </div>
+                        </div>
+                        <div class="project-card__meta">
+                            <span class="project-card__number">01</span>
+                            <div class="project-card__info">
+                                <h3 class="project-card__title">Nueva Revista</h3>
+                                <span class="project-card__category">UX Design · AI Conversacional</span>
+                            </div>
+                            <span class="project-card__arrow" aria-hidden="true">↗</span>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Proyecto 02 -->
+                <article class="project-card" data-reveal data-reveal-delay="1">
+                    <a href="projects/project-02.html" class="project-card__link" aria-label="Ver proyecto: Ubinficar">
+                        <div class="project-card__cover">
+                            <!-- <img src="assets/images/project-02-cover.jpg" alt="Ubinficar"> -->
+                            <div class="project-card__placeholder" style="--ph-hue: 40"></div>
+                            <div class="project-card__overlay" aria-hidden="true">
+                                <span class="project-card__view">Ver proyecto →</span>
+                            </div>
+                        </div>
+                        <div class="project-card__meta">
+                            <span class="project-card__number">02</span>
+                            <div class="project-card__info">
+                                <h3 class="project-card__title">Unificar experiencia</h3>
+                                <span class="project-card__category">Service Design · Experiencia</span>
+                            </div>
+                            <span class="project-card__arrow" aria-hidden="true">↗</span>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Proyecto 03 -->
+                <article class="project-card" data-reveal data-reveal-delay="2">
+                    <a href="projects/project-03.html" class="project-card__link" aria-label="Ver proyecto: Nombre del Proyecto 03">
+                        <div class="project-card__cover">
+                            <div class="project-card__placeholder" style="--ph-hue: 320"></div>
+                            <div class="project-card__overlay" aria-hidden="true">
+                                <span class="project-card__view">Ver proyecto →</span>
+                            </div>
+                        </div>
+                        <div class="project-card__meta">
+                            <span class="project-card__number">03</span>
+                            <div class="project-card__info">
+                                <h3 class="project-card__title">Nombre del Proyecto</h3>
+                                <span class="project-card__category">Brand Identity · Digital</span>
+                            </div>
+                            <span class="project-card__arrow" aria-hidden="true">↗</span>
+                        </div>
+                    </a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ─── Sobre mí ───────────────────────────────────────────────── -->
+        <section class="about" id="sobre-mi">
+            <div class="about__inner">
+                <div class="about__header" data-reveal>
+                    <span class="label">Sobre mí</span>
+                </div>
+                <div class="about__grid">
+                    <div class="about__text" data-reveal>
+                        <p class="about__bio">
+                            Soy diseñadora digital con enfoque en UX/UI y diseño
+                            aplicado a la inteligencia artificial. Me interesa crear
+                            interfaces que sean útiles, accesibles y visualmente coherentes.
+                        </p>
+                        <p class="about__bio about__bio--muted">
+                            Trabajo en el cruce entre diseño de producto, sistemas de
+                            diseño e IA generativa.
+                        </p>
+                    </div>
+                    <div class="about__skills" data-reveal data-reveal-delay="1">
+                        <div class="skill-group">
+                            <span class="skill-group__label">Disciplinas</span>
+                            <ul class="skill-group__list">
+                                <li>UX Research</li>
+                                <li>UI Design</li>
+                                <li>AI Interface Design</li>
+                                <li>Design Systems</li>
+                                <li>Prototipado</li>
+                            </ul>
+                        </div>
+                        <div class="skill-group">
+                            <span class="skill-group__label">Herramientas</span>
+                            <ul class="skill-group__list">
+                                <li>Figma</li>
+                                <li>Framer</li>
+                                <li>Midjourney</li>
+                                <li>ProtoPie</li>
+                                <li>Notion</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ─── Footer ────────────────────────────────────────────────────── -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__left">
+                <span class="footer__name">Maria Almazan</span>
+                <span class="footer__tagline">Diseñadora UX/UI & AI Design</span>
+            </div>
+            <div class="footer__links">
+                <a href="mailto:tu@email.com" class="footer__link">meryalma21@gmail.com</a>
+                <a href="#" target="_blank" rel="noopener" class="footer__link">LinkedIn</a>
+            </div>
+            <span class="footer__copy">© 2026</span>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
