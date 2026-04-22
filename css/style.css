@@ -875,6 +875,89 @@ ul { list-style: none; }
     flex-shrink: 0;
 }
 
+/* Grid de citas (focus group, testimonios) */
+.content-quotes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+}
+
+.content-quote-card {
+    padding: var(--gap-md) 0;
+    border-top: 1px solid var(--border);
+    padding-right: var(--gap-lg);
+}
+
+.content-quote-card p {
+    font-size: var(--size-lg);
+    font-weight: 300;
+    line-height: 1.5;
+    color: var(--text);
+    font-style: italic;
+}
+
+/* Hero sin imagen (proyectos de investigación) */
+.project-hero--text {
+    padding-top: 140px;
+    padding-bottom: 0;
+    background: var(--bg);
+}
+
+.project-hero--text .project-hero__header {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 0 var(--pad-x) var(--gap-xl);
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-md);
+    border-bottom: 1px solid var(--border);
+}
+
+.project-hero--text .project-hero__number {
+    padding-bottom: 0;
+}
+
+.project-hero--text .project-hero__title {
+    font-size: clamp(3rem, 8vw, 6.5rem);
+}
+
+/* Dos columnas de texto (propuesta + principios) */
+.content-two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap-xl);
+    align-items: start;
+}
+
+/* Bloque de insight / callout invertido */
+.content-callout {
+    background: var(--text);
+    color: var(--white);
+    border-radius: var(--radius-lg);
+    padding: var(--gap-xl) var(--gap-2xl);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gap-sm);
+}
+
+.content-callout__label {
+    font-size: var(--size-xs);
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+}
+
+.content-callout__text {
+    font-size: clamp(1.4rem, 3vw, 2.25rem);
+    font-weight: 300;
+    line-height: 1.35;
+    letter-spacing: -0.02em;
+    max-width: 720px;
+}
+
 /* Placeholder de vídeo */
 .content-video {
     width: 100%;
@@ -1044,6 +1127,19 @@ ul { list-style: none; }
 
     .content-grid {
         grid-template-columns: 1fr;
+    }
+
+    .content-quotes {
+        grid-template-columns: 1fr;
+    }
+
+    .content-two-col {
+        grid-template-columns: 1fr;
+        gap: var(--gap-lg);
+    }
+
+    .content-callout {
+        padding: var(--gap-lg) var(--gap-md);
     }
 
     .project-footer__inner {
