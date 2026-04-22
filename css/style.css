@@ -430,6 +430,22 @@ ul { list-style: none; }
     letter-spacing: 0.04em;
 }
 
+/* Variante para imágenes panorámicas en card */
+.project-card__cover--contain {
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--gap-md);
+}
+
+.project-card__cover--contain img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: var(--radius-sm);
+}
+
 /* Hover: zoom + overlay */
 .project-card__link:hover .project-card__placeholder,
 .project-card__link:hover .project-card__cover img {
