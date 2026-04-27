@@ -472,7 +472,7 @@ ul { list-style: none; }
 .project-card__number {
     font-size: var(--size-xs);
     font-weight: 500;
-    color: var(--text-muted);
+    color: var(--accent);
     padding-top: 3px;
     letter-spacing: 0.06em;
     flex-shrink: 0;
@@ -565,7 +565,7 @@ ul { list-style: none; }
     text-transform: uppercase;
     color: var(--text-secondary);
     padding-bottom: var(--gap-sm);
-    border-bottom: 1px solid var(--border);
+    border-bottom: 1px solid var(--accent);
 }
 
 .skill-group__list {
@@ -582,6 +582,7 @@ ul { list-style: none; }
 /* ── Footer ──────────────────────────────────────────────────────────────── */
 .footer {
     padding: var(--gap-lg) var(--pad-x);
+    border-top: 1px solid var(--accent);
 }
 
 .footer__inner {
